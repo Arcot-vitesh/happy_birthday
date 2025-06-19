@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday 🎂</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="cake-page">
+  <!-- Background music -->
+  <audio id="voiceAudio" src="audio/your-voice.mp3"></audio>
+
+  <!-- Nickname background layer -->
+  <div class="nickname-bg"></div>
+
+  <!-- Balloons and Stars -->
+  <div class="balloon-container">
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon green"></div>
+    <div class="balloon yellow"></div>
+  </div>
+
+  <div class="stars-bg"></div>
+
+  <!-- Title + Layout -->
+  <h1 class="birthday-title">Happy Birthday Kannalu 😘😘😘😘😘🎉🎉</h1>
+  <button id="startButton">Start the Magic ✨</button>
+
+  <div class="layout-container">
+    <div class="cake-wrapper">
+      <div class="cake">
+        <div class="layer bottom"></div>
+        <div class="layer middle"></div>
+        <div class="layer top"></div>
+        <div class="candles">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="camera-box"></div>
+  </div>
+
+  <h2 id="countdownText" class="countdown-text">🎂 Blow the candles in... 3</h2>
+
+  <script src="script.js"></script>
+</body>
+</html>

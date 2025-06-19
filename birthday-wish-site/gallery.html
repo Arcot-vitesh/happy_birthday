@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You’re Amazing 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="slideshow-page">
+  <h1 class="slideshow-heading">My babygurl turns 22 and I am so Proud of her 💕💕💕</h1>
+  <div class="slideshow-frame">
+    <img id="slideshow" src="images/p1.jpg" alt="Slide" />
+  </div>
+
+  <audio autoplay loop>
+    <source src="audio/piano-hbd.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script>
+    const slides = [
+      "images/p1.jpg",
+      "images/p2.jpg",
+      "images/p3.jpg",
+      "images/p4.jpg",
+      "images/p5.jpg",
+      "images/p6.png",
+      "images/p7.png",
+      "images/p8.jpg",
+      "images/p9.png"
+
+      
+
+    ];
+    let index = 0;
+    const img = document.getElementById("slideshow");
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      img.src = slides[index];
+    }, 3000);
+  </script>
+</body>
+</html>
